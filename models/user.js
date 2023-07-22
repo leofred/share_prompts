@@ -1,4 +1,4 @@
-import { Schema, model, models } from "mongoose"
+import { Schema, model, models } from 'mongoose'
 
 const UserSchema = new Schema({
   email: {
@@ -8,10 +8,10 @@ const UserSchema = new Schema({
   },
   name: {
     type: String,
-    required: [true, 'Username is required!'],
+    required: [true, 'Username is required!']
   },
   image: {
-    type: String,
+    type: String
   }
 })
 const User = models.User || model('User', UserSchema)
