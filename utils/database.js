@@ -1,11 +1,11 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose'
 
 let isConnected = false
 
 export const connectToDB = async () => {
   mongoose.set('strictQuery', true)
 
-  if(isConnected){
+  if (isConnected) {
     return console.log('MongoDB is already connected')
   }
 
